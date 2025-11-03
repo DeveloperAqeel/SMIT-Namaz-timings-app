@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content=", initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Namaz timing</title>
 </head>
+
 <body>
-<div id="main-div">
-    <form onsubmit="checkData(); return false">
-    <input type="text" id="userCountry" placeholder="Enter your country">
-    <input type="text" id="userCity" placeholder="Enter your city">
-    <button id="btn" type="submit">Check</button>
-</form>
-<div id="result">
-    <div class="img-div1"><img src="assets/aa.png" width="180px" height="250px"><p>Fajr &nbsp;&nbsp;&nbsp;&nbsp;</p></div>
-    <div class="img-div2"><img src="assets/aa.png" width="180px" height="250px"><p>Dhuhr &nbsp;&nbsp;&nbsp;&nbsp;</p></div>
-    <div class="img-div3"><img src="assets/aa.png" width="180px" height="250px"><p>Asr &nbsp;&nbsp;&nbsp;&nbsp;</p></div>
-    <div class="img-div4"><img src="assets/aa.png" width="180px" height="250px"><p>Maghrib &nbsp;&nbsp;&nbsp;&nbsp;</p></div>
-    <div class="img-div5"><img src="assets/aa.png" width="180px" height="250px"><p>Isha &nbsp;&nbsp;&nbsp;&nbsp;</p></div>
-</div>
-</div>
+    <div id="main-div">
+        <div id="top-div">
+            <div id="top-inner-div1"><img class="img1"
+                    src="assets/pngtree-islamic-frame-with-lantern-png-image_6967435.png" height="200px"
+                    alt="Any issue">
+                <p>Timezone : <br><span id="span1">  </span><br>
+                    Method Name : <br><span id="span2"> </span><br>
+
+                </p>
+            </div>
+            <div id="top-inner-div1"><img class="img2" src="assets/new bg (1).png" height="280px" alt="Any issue"></div>
+            <div id="top-inner-div1"><img class="img1"
+                    src="assets/pngtree-islamic-frame-with-lantern-png-image_6967435.png" height="200px"
+                    alt="Any issue">
+                <p>
+                    Date : <br><span id="span3"></span> <br>
+                    hijri Date : <br><span id="span4"></span>
+                </p>
+
+            </div>
+        </div>
+        <form onsubmit="checkData(); return false" class="inp-con">
+            <input type="text" id="userCountry" placeholder="Enter your country" required>
+            <input type="text" id="userCity" placeholder="Enter your city" required>
+            <button id="btn" type="submit">Check</button>
+        </form>
+        <div id="result">
+            <div class="img-div1"><img src="assets/aa.png" width="180px" height="250px">
+                <p>Fajr &nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="img-div1"><img src="assets/aa.png" width="180px" height="250px">
+                <p>Sunrise &nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="img-div2"><img src="assets/aa.png" width="180px" height="250px">
+                <p>Dhuhr &nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="img-div3"><img src="assets/aa.png" width="180px" height="250px">
+                <p>Asr &nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="img-div4"><img src="assets/aa.png" width="180px" height="250px">
+                <p>Maghrib &nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+            <div class="img-div5"><img src="assets/aa.png" width="180px" height="250px">
+                <p>Isha &nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
